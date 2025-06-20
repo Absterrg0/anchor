@@ -48,7 +48,7 @@ pub struct DataShape{
 
 
 #[derive(Accounts)]
-pub struct initialise<'info>{
+pub struct Initialise<'info>{
     #[account(init,payer=signer,space=8+4)]
     account: Account<'info,DataShape>,
     system_program: Program<'info,System>,
